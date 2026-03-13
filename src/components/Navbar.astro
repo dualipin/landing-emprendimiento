@@ -1,0 +1,48 @@
+---
+import { COMPANY_NAME } from "../constants/site";
+import logo from "../assets/logos/logo64.webp";
+import { Image } from "astro:assets";
+import ThemeToggle from "./ThemeToggle.astro";
+import { Menu } from "@lucide/astro";
+---
+
+<div
+  class="navbar animate-fade-in-down bg-base-100/50 backdrop-blur-md shadow-sm fixed top-0 z-50 px-4 sm:px-8 md:px-16 lg:px-32"
+>
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <Menu />
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-md dropdown-content bg-base-100 text-xl rounded-box z-1 mt-3 w-52 p-2 shadow"
+      >
+        <li><a>Inicio</a></li>
+        <li><a>Servicios</a></li>
+        <li><a>Contacto</a></li>
+      </ul>
+    </div>
+    <div class="flex items-center text-xl">
+      <Image
+        src={logo}
+        alt="Logo"
+        width={40}
+        height={40}
+        class="mr-2 rounded-box"
+      />
+      <span class="font-semibold hidden sm:inline">{COMPANY_NAME}</span>
+    </div>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Inicio</a></li>
+      <li><a>Servicios</a></li>
+      <li><a>Contacto</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end gap-3">
+    <a class="btn btn-primary">Contactar</a>
+    <ThemeToggle />
+  </div>
+</div>
