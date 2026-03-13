@@ -1,7 +1,6 @@
 ---
 import { COMPANY_NAME } from "../constants/site";
 import logo from "../assets/logos/logo64.webp";
-import { Image } from "astro:assets";
 import ThemeToggle from "./ThemeToggle.astro";
 import { Menu } from "@lucide/astro";
 ---
@@ -24,8 +23,8 @@ import { Menu } from "@lucide/astro";
       </ul>
     </div>
     <div class="flex items-center text-xl">
-      <Image
-        src={logo}
+      <img
+        src={logo.src}
         alt="Logo"
         width={40}
         height={40}
