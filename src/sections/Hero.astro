@@ -25,126 +25,128 @@ import SectionTitle from "../components/ui/SectionTitle.astro";
       class="hero-content z-10 w-full max-w-7xl flex-col items-stretch gap-14 px-0"
     >
       <div class="grid items-center gap-10 lg:grid-cols-2">
-        <h1
-          class="text-5xl font-black uppercase leading-[0.95] sm:text-6xl lg:text-7xl"
-        >
-          Innovar.<br />
-          Desarrollar.<br />
-          <span class="text-primary">Crecer.</span>
-        </h1>
+        <div class="animate-fade-in-down space-y-6 animate-delay-[120ms]">
+          <h1
+            class="text-5xl font-black uppercase leading-[0.95] sm:text-6xl lg:text-7xl"
+          >
+            Innovar.<br />
+            Desarrollar.<br />
+            <span class="text-primary">Crecer.</span>
+          </h1>
 
-        <p class="max-w-2xl text-lg text-base-content/80">
-          <span class="font-semibold text-primary"
-            >{COMPANY_NAME} - Compania de Software</span
-          >
-          <br />
-          Soluciones tecnologicas modernas para un mundo conectado. Equipo especialista
-          en
-          <span class="font-semibold text-base-content"
-            >Python, JavaScript, C# y .NET</span
-          >
-          para software confiable, escalable y de alto rendimiento.
-        </p>
-
-        <div class="flex flex-wrap items-center gap-4">
-          <a
-            href="#proyectos"
-            class="btn btn-primary btn-lg animate-fade-in-down animate-delay-[240ms]"
-            >Ver proyectos</a
-          >
-          <a
-            href="#contacto"
-            class="btn btn-outline btn-lg animate-fade-in-down animate-delay-[320ms]"
-            >Contactar ahora</a
-          >
-        </div>
-
-        <div class="grid gap-3 sm:grid-cols-2">
-          <div
-            class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm"
-          >
-            <MapPin class="size-4" />
-            Tabasco, Mexico
-          </div>
-          <div
-            class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm"
-          >
-            <Mail class="size-4" />
-            contacto@tudominio.com
-          </div>
-          <div
-            class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm sm:col-span-2"
-          >
-            <Phone class="size-4" />
-            +52 0000000000
-          </div>
-        </div>
-      </div>
-
-      <div class="relative flex items-center justify-center lg:justify-end">
-        <div
-          class="card w-full max-w-xs sm:max-w-sm animate-fade-in-down border border-base-content/10 bg-base-100/70 shadow-2xl backdrop-blur animate-delay-[180ms]"
-        >
-          <div class="card-body items-center p-7 sm:p-9">
-            <div
-              class="rounded-box bg-base-100 p-5 shadow-inner shadow-primary/25 ring-1 ring-primary/20"
+          <p class="max-w-2xl text-lg text-base-content/80">
+            <span class="font-semibold text-primary"
+              >{COMPANY_NAME} - Compania de Software</span
             >
-              <img
-                src={logo.src}
-                alt="Logo principal"
-                class="h-36 w-36 object-contain"
-              />
+            <br />
+            Soluciones tecnologicas modernas para un mundo conectado. Equipo especialista
+            en
+            <span class="font-semibold text-base-content"
+              >Python, JavaScript, C# y .NET</span
+            >
+            para software confiable, escalable y de alto rendimiento.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a
+              href="#proyectos"
+              class="btn btn-primary btn-lg animate-fade-in-down animate-delay-[240ms]"
+              >Ver proyectos</a
+            >
+            <a
+              href="#contacto"
+              class="btn btn-outline btn-lg animate-fade-in-down animate-delay-[320ms]"
+              >Contactar ahora</a
+            >
+          </div>
+
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div
+              class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm"
+            >
+              <MapPin class="size-4" />
+              Tabasco, Mexico
             </div>
-            <div class="badge badge-primary badge-outline mt-4">
-              Software Engineering
+            <div
+              class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm"
+            >
+              <Mail class="size-4" />
+              contacto@tudominio.com
+            </div>
+            <div
+              class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm sm:col-span-2"
+            >
+              <Phone class="size-4" />
+              +52 0000000000
             </div>
           </div>
         </div>
 
-        <div
-          class="badge badge-neutral absolute left-4 top-10 animate-fade-in-down animate-delay-[420ms] text-xs sm:text-sm"
-        >
-          .NET & C#
-        </div>
-        <div
-          class="badge badge-neutral absolute right-2 top-24 animate-fade-in-down animate-delay-[520ms] sm:right-8 text-xs sm:text-sm"
-        >
-          .NET MAUI
-        </div>
-        <div
-          class="badge badge-neutral absolute right-4 top-40 animate-fade-in-down animate-delay-[620ms] text-xs sm:text-sm"
-        >
-          Python
-        </div>
-        <div
-          class="badge badge-neutral absolute left-4 bottom-14 animate-fade-in-down animate-delay-[720ms] text-xs sm:text-sm"
-        >
-          SQL Server
+        <div class="relative flex items-center justify-center lg:justify-end">
+          <div
+            class="card w-full max-w-xs sm:max-w-sm animate-fade-in-down border border-base-content/10 bg-base-100/70 shadow-2xl backdrop-blur animate-delay-[180ms]"
+          >
+            <div class="card-body items-center p-7 sm:p-9">
+              <div
+                class="rounded-box bg-base-100 p-5 shadow-inner shadow-primary/25 ring-1 ring-primary/20"
+              >
+                <img
+                  src={logo.src}
+                  alt="Logo principal"
+                  class="h-36 w-36 object-contain"
+                />
+              </div>
+              <div class="badge badge-primary badge-outline mt-4">
+                Software Engineering
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="badge badge-neutral absolute left-4 top-10 animate-fade-in-down animate-delay-[420ms] text-xs sm:text-sm"
+          >
+            .NET & C#
+          </div>
+          <div
+            class="badge badge-neutral absolute right-2 top-24 animate-fade-in-down animate-delay-[520ms] sm:right-8 text-xs sm:text-sm"
+          >
+            .NET MAUI
+          </div>
+          <div
+            class="badge badge-neutral absolute right-4 top-40 animate-fade-in-down animate-delay-[620ms] text-xs sm:text-sm"
+          >
+            Python
+          </div>
+          <div
+            class="badge badge-neutral absolute left-4 bottom-14 animate-fade-in-down animate-delay-[720ms] text-xs sm:text-sm"
+          >
+            SQL Server
+          </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="stats stats-vertical w-full animate-fade-in-down bg-base-100/65 shadow xl:stats-horizontal"
-    >
-      <div class="stat place-items-center">
-        <div class="stat-value text-primary">3+</div>
-        <div class="stat-title">Años de experiencia</div>
-      </div>
+      <div
+        class="stats stats-vertical w-full animate-fade-in-down bg-base-100/65 shadow xl:stats-horizontal"
+      >
+        <div class="stat place-items-center">
+          <div class="stat-value text-primary">3+</div>
+          <div class="stat-title">Años de experiencia</div>
+        </div>
 
-      <div class="stat place-items-center">
-        <div class="stat-value text-primary">15+</div>
-        <div class="stat-title">Proyectos completados</div>
-      </div>
+        <div class="stat place-items-center">
+          <div class="stat-value text-primary">15+</div>
+          <div class="stat-title">Proyectos completados</div>
+        </div>
 
-      <div class="stat place-items-center">
-        <div class="stat-value text-primary">4</div>
-        <div class="stat-title">Lenguajes dominados</div>
-      </div>
+        <div class="stat place-items-center">
+          <div class="stat-value text-primary">4</div>
+          <div class="stat-title">Lenguajes dominados</div>
+        </div>
 
-      <div class="stat place-items-center">
-        <div class="stat-value text-primary">100%</div>
-        <div class="stat-title">Clientes satisfechos</div>
+        <div class="stat place-items-center">
+          <div class="stat-value text-primary">100%</div>
+          <div class="stat-title">Clientes satisfechos</div>
+        </div>
       </div>
     </div>
   </div>
