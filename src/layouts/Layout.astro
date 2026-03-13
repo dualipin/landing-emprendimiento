@@ -11,13 +11,19 @@ import "@fontsource-variable/source-serif-4";
 import "../styles/global.css";
 ---
 
-<html lang="en">
+<html lang="es" data-theme="dark">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/webp" href={logo.src} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{COMPANY_NAME}</title>
+
+		<!-- Prevenir flash de tema no guardado -->
+		<script is:inline>
+			const theme = localStorage.getItem("theme") || "dark";
+			document.documentElement.setAttribute("data-theme", theme);
+		</script>
 	</head>
 	<body>
 		<Navbar />

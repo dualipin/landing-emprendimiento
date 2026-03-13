@@ -2,6 +2,7 @@
 import { COMPANY_NAME } from "../constants/site";
 import logo from "../assets/logos/logo64.webp";
 import { Menu } from "@lucide/astro";
+import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <div
@@ -45,8 +46,8 @@ import { Menu } from "@lucide/astro";
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </div>
-  <div class="navbar-end gap-3">
-    <a class="btn btn-outline btn-sm sm:btn-md">Iniciar sesion</a>
+  <div class="navbar-end gap-5 flex items-center">
+    <ThemeToggle />
     <a href="#contacto" class="btn btn-primary btn-sm sm:btn-md">Contratar</a>
   </div>
 </div>
