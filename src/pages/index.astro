@@ -1,23 +1,158 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import logo from "../assets/logos/logo512.webp";
+import { Mail, MapPin, Phone } from "@lucide/astro";
 ---
 
 <Layout>
-  <div class="hero bg-base-200 min-h-screen">
-    <div class="hero-content flex-col lg:flex-row-reverse">
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-        class="max-w-sm rounded-lg shadow-2xl"
-      />
-      <div>
-        <h1 class="text-5xl font-bold">Box Office News!</h1>
-        <p class="py-6">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-          excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-          id nisi.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
+  <section
+    class="relative min-h-screen overflow-hidden bg-base-200 px-4 pb-16 pt-28 sm:px-8 md:px-16 lg:px-24"
+  >
+    <div class="hero">
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+        <div
+          class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,oklch(68%_0.21_40/0.2),transparent_45%),radial-gradient(circle_at_80%_40%,oklch(55%_0.16_250/0.18),transparent_55%)]"
+        >
+        </div>
+        <div
+          class="absolute inset-0 opacity-25 bg-[linear-gradient(oklch(92%_0.01_255/0.08)_1px,transparent_1px),linear-gradient(90deg,oklch(92%_0.01_255/0.08)_1px,transparent_1px)] bg-size-[38px_38px]"
+        >
+        </div>
+      </div>
+
+      <div
+        class="hero-content z-10 w-full max-w-7xl flex-col items-stretch gap-14 px-0"
+      >
+        <div class="grid items-center gap-10 lg:grid-cols-2">
+          <div class="animate-fade-in-down space-y-6 animate-delay-[120ms]">
+            <div
+              class="badge badge-outline badge-lg gap-2 border-primary/40 bg-base-100/60 px-4 py-4"
+            >
+              <span class="inline-flex h-2 w-2 rounded-full bg-primary"></span>
+              Disponible para proyectos
+            </div>
+
+            <h1
+              class="text-5xl font-black uppercase leading-[0.95] sm:text-6xl lg:text-7xl"
+            >
+              Innovar.<br />
+              Desarrollar.<br />
+              <span class="text-primary">Crecer.</span>
+            </h1>
+
+            <p class="max-w-2xl text-lg text-base-content/80">
+              <span class="font-semibold text-primary"
+                >Smith Cruz - Desarrollador de Software</span
+              >
+              <br />
+              Soluciones tecnológicas modernas para un mundo conectado. Especialista
+              en
+              <span class="font-semibold text-base-content"
+                >Python, JavaScript, C# y .NET</span
+              >
+              para software confiable, escalable y de alto rendimiento.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4">
+              <a
+                class="btn btn-primary btn-lg animate-fade-in-down animate-delay-[240ms]"
+                >Ver proyectos</a
+              >
+              <a
+                class="btn btn-outline btn-lg animate-fade-in-down animate-delay-[320ms]"
+                >Contactar ahora</a
+              >
+            </div>
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <div
+                class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm"
+              >
+                <MapPin class="size-4" />
+                Tabasco, Mexico
+              </div>
+              <div
+                class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm"
+              >
+                <Mail class="size-4" />
+                contacto@tudominio.com
+              </div>
+              <div
+                class="badge badge-outline h-12 justify-start gap-2 border-base-content/20 bg-base-100/60 px-4 text-sm sm:col-span-2"
+              >
+                <Phone class="size-4" />
+                +52 0000000000
+              </div>
+            </div>
+          </div>
+
+          <div class="relative flex items-center justify-center lg:justify-end">
+            <div
+              class="card w-full max-w-sm animate-fade-in-down border border-base-content/10 bg-base-100/70 shadow-2xl backdrop-blur animate-delay-[180ms]"
+            >
+              <div class="card-body items-center p-7 sm:p-9">
+                <div
+                  class="rounded-box bg-base-100 p-5 shadow-inner shadow-primary/25 ring-1 ring-primary/20"
+                >
+                  <img
+                    src={logo.src}
+                    alt="Logo principal"
+                    class="h-36 w-36 object-contain"
+                  />
+                </div>
+                <div class="badge badge-primary badge-outline mt-4">
+                  Software Engineering
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="badge badge-neutral absolute left-4 top-10 animate-fade-in-down animate-delay-[420ms]"
+            >
+              .NET & C#
+            </div>
+            <div
+              class="badge badge-neutral absolute -right-1 top-28 animate-fade-in-down animate-delay-[520ms] sm:right-8"
+            >
+              .NET MAUI
+            </div>
+            <div
+              class="badge badge-neutral absolute right-4 top-48 animate-fade-in-down animate-delay-[620ms]"
+            >
+              Python
+            </div>
+            <div
+              class="badge badge-neutral absolute left-4 bottom-14 animate-fade-in-down animate-delay-[720ms]"
+            >
+              SQL Server
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="stats stats-vertical w-full animate-fade-in-down bg-base-100/65 shadow xl:stats-horizontal"
+        >
+          <div class="stat place-items-center">
+            <div class="stat-value text-primary">3+</div>
+            <div class="stat-title">Años de experiencia</div>
+          </div>
+
+          <div class="stat place-items-center">
+            <div class="stat-value text-primary">15+</div>
+            <div class="stat-title">Proyectos completados</div>
+          </div>
+
+          <div class="stat place-items-center">
+            <div class="stat-value text-primary">4</div>
+            <div class="stat-title">Lenguajes dominados</div>
+          </div>
+
+          <div class="stat place-items-center">
+            <div class="stat-value text-primary">100%</div>
+            <div class="stat-title">Clientes satisfechos</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </Layout>
